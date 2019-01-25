@@ -97,7 +97,8 @@
         const data = e.data;
         if (data.messageType === 'INIT') {
           onInitChannel(data);
-        } else {
+        };
+        if (data.messageType === 'DATA') {
           onDataChannel(data);
         }
       };
